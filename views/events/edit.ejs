@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs')%>
+<link rel="stylesheet" type="text/css" href="/css/bookahall.css" />
+<main>
+    <form action="/events/<%=event.id%>?_method=PUT" method="post">
+        <label for="name">Title
+            <input type="text" id="title" name="title" value="<%= event.title%>" required><br><br></label>
+            <label for="name">Host Name
+            <input type="text" id="name" name="name" value="<%= event.name%>" required><br><br></label>
+            <label for="Details">Details
+            <textarea id="details" name="details" rows="3" cols="10" required minlength="10"><%= event.details%></textarea><br><br></label>
+            <label for="date">When
+            <input type="date" id="date" name="date" value="<%= event.date%>" required><br><br></label>
+            <label for="location">Where
+            <input type="text" id="location" name="location" value="<%= event.location%>" required><br><br></label>
+            <label for="starttime">Start
+            <input type="time" id="starttime" name="starttime" value="<%= event.starttime%>" required><br><br></label>
+            <label for="endtime">End
+            <input type="time" id="endtime" name="endtime" value="<%= event.endtime%>" required><br><br></label>
+            <label for="imageUrl">Image URL:</label>
+            <input type="url" id="imageUrl" name="imageURL" value="<%= event.imageURL%>"  required><br><br>
+            <button type="submit" >Submit</button>
+    </form>
+</main>
+
+<%- include('../partials/footer.ejs')%>

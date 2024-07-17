@@ -1,0 +1,32 @@
+<%- include('../partials/header.ejs')%>
+<link rel="stylesheet" type="text/css" href="/css/show.css" />
+<div class="content">
+  <div class="content-header">
+      <span><b><%= event.title %></b></span>
+      <div class="button-container">
+          <form class="button-form" method="get" action="/events/<%= event.id %>/edit">
+              <button type="submit">Edit</button>
+          </form>
+          <form class="button-form" method="post" action="/events/<%= event.id %>?_method=DELETE">
+              <button type="submit">Delete</button>
+          </form>
+      </div>
+  </div>
+  <div class="container">
+      <img class="image" src=<%=event.imageURL%> alt="Image">
+      <div class="text">
+          <p>Hosted By: <%= event.name %></p>
+          <p>Date: <%= event.date %></p>
+          <p>Starts at: <%= event.starttime %></p>
+          <p>Ends at: <%= event.endtime%></p>
+          <p>Event: <%= event.halltype %></p>
+          <p>Location: <%= event.location %></p>
+      </div>
+  </div>
+  <h4><b>Description</b></h4>
+  <p><%= event.details %></p>
+</div>
+
+
+
+<%- include('../partials/footer.ejs')%>

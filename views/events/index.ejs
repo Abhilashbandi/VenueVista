@@ -1,0 +1,26 @@
+<%- include('../partials/header.ejs')%>
+<link rel="stylesheet" type="text/css" href="/css/eventhall.css" />
+<main>
+    <table>
+        <% const hallTypes = [...new Set(events.map(event => event.halltype))]; %>
+        <% hallTypes.forEach(hallType => { %>
+            <div>
+                <th><%= hallType %></th>
+            </div>
+            <% events.forEach(event => {
+                if (event.halltype === hallType) { %>
+                    <span>
+                        <tr>
+                            <td><a href="/events/<%= event.id %>"><%= event.title %></a></td>
+                        </tr>
+                    </span>
+                <% }
+            }); %>
+        <% }); %>
+    </table>
+    
+</main>
+
+
+
+<%- include('../partials/footer.ejs')%>
