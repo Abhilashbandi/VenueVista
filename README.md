@@ -23,3 +23,7 @@ The objective of this project is to develop an event management website enabling
 - Open the terminal in VSCode and Install nodemodules using:
 - npm install
 - Run this command to start the app: nodemon app
+**Snapshots**
+  1. Home Page
+     ![image](https://github.com/user-attachments/assets/784cf6a2-08b1-415e-b142-65ab3f5d3adc)
+
