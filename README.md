@@ -16,7 +16,7 @@ The objective of this project is to develop an event management website enabling
 
 \- Comprehensive online solution for event management
 
-**Installation**
+**Installation Guide**
 
 - Create the collecion required for the project.(Run the CreateDB script in mongoshell)
 - Open the Project Directory in VSCode.
