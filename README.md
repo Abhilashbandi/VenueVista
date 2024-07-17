@@ -2,7 +2,7 @@
 
 **Objective**
 
-The objective of this project is to develop an event management website enabling users to seamlessly book halls for various occasions such as weddings, birthday parties, and business conferences. The platform will feature a user-friendly interface for hassle-free reservations and an integrated option for catering services, allowing users to conveniently order food tailored to their event requirements. By creating a comprehensive online solution, our goal is to simplify the event planning process, providing users with a streamlined and secure platform that meets their diverse venue and catering needs.
+VenueVista is an event management website developed by Abhilash Bandi and Hari Chandana Pulaparti. The platform enables users to seamlessly book halls for various occasions such as weddings, birthday parties, and business conferences. It features a user-friendly interface for hassle-free reservations and an integrated option for catering services, allowing users to conveniently order food tailored to their event requirements. By creating a comprehensive online solution, VenueVista aims to simplify the event planning process, providing users with a streamlined and secure platform that meets their diverse venue and catering needs.
 
 **Features**
 
